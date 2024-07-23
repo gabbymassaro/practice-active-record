@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_07_23_183805) do
+ActiveRecord::Schema.define(version: 2024_07_23_192253) do
 
   create_table "conferences", force: :cascade do |t|
     t.string "name"
     t.integer "year"
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.string "title"
+    t.integer "duration"
+    t.integer "conference_id"
+    t.integer "speaker_id"
   end
 
   create_table "speakers", force: :cascade do |t|
