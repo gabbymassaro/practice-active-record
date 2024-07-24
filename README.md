@@ -109,7 +109,7 @@ Use `rake console` and check that these methods work before proceeding. For exam
 
 **Conference**
 
-- `Conference#add_session(speaker, title, duration)`
+- `Conference.add_session(speaker, title, duration)`
   - takes a `speaker` (an instance of the `Speaker` class), a `title` (string), and a `duration` (integer) as arguments, and creates a new `Session` instance associated with this conference and the given speaker
 - `Conference#oldest_conference`
   - returns the `Conference` instance with the earliest year
